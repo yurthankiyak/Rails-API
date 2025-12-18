@@ -5,7 +5,7 @@ gem "puma", ">= 5.0"
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "psych", "5.2.2"
 gem "irb", "1.14.3"
-gem "rdoc", "6.14.0"
+gem "rdoc", "7.0.1"
 gem "solid_cache"
 gem "solid_queue"
 gem "solid_cable"
