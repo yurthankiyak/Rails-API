@@ -1,5 +1,4 @@
-﻿# Rails API Backend Ödevi
-
+﻿# Rails API Backend 
 Bu proje Ruby on Rails 8.1.1 ile oluşturulmuş, öğrenci ve kurs yönetimini sağlayan bir RESTful API'dir.
 
 ## Kurulum ve Çalıştırma
