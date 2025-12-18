@@ -1,0 +1,31 @@
+# Arayüz ve UX Geliştirme Planı
+
+Kullanıcı deneyimini iyileştirmek için NotebookLM sekmesine yönlendirme mesajı ekleyecek ve tüm uygulamanın tasarımını modernize edeceğiz.
+
+## Önerilen Değişiklikler
+
+### [ai_english_tutor]
+
+#### [MODIFY] [app.py](file:///c:/Users/yurth/.gemini/antigravity/scratch/ai_english_tutor/app.py)
+
+1.  **UX: Yönlendirme Mesajı**:
+    - `NotebookLM` sekmesinde dosya yüklendikten sonra çıkan `st.success` mesajının altına:
+      *"Harika! Şimdi sol menüden 'Smart Chat'e giderek bu dökümanlar hakkında konuşmaya başlayabilirsiniz."* şeklinde belirgin bir bilgi notu eklenecek.
+
+2.  **UI: Tasarım İyileştirmeleri (CSS)**:
+    - **Font**: Google Fonts'tan modern bir font (örn. 'Outfit' veya 'Inter') eklenecek.
+    - **Renk Paleti**:
+        - Arka plan için yumuşak, göz yormayan modern gri/beyaz tonları.
+        - Vurgu renkleri için "Deep Purple" ve "Teal" gradientleri.
+    - **Bileşenler**:
+        - `.card` sınıfı için hover (üzerine gelince) efektleri, yumuşak gölgeler ve yuvarlatılmış köşeler.
+        - Sidebar (Yan menü) için daha şık bir arka plan rengi.
+        - Butonlar için gradient geçişli modern stil.
+    - **Başlıklar**: Başlıkların altına dekoratif çizgi veya renkli vurgular.
+
+## Görsel Hedef
+Uygulama standart Streamlit görüntüsünden çıkıp, özel bir web uygulaması hissiyatı verecek. "Premium" ve "Eğitici" bir hava hedefleniyor.
+
+## Doğrulama
+- Görsel kontrol: Yazı tiplerinin yüklendiği ve stillerin uygulandığı kontrol edilecek.
+- İşlevsel kontrol: Dosya yüklendikten sonra yeni mesajın göründüğü test edilecek.

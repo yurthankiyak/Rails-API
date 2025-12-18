@@ -1,0 +1,32 @@
+# Premium UI Dönüşüm Planı (Real App Feel)
+
+Standart Streamlit görünümünden tamamen uzaklaşıp, modern bir SaaS uygulaması hissi veren "Premium" bir tasarım uygulayacağız.
+
+## Tasarım Felsefesi
+- **Glassmorphism**: Yarı saydam paneller ve bulanık arka planlar.
+- **Gradient Typography**: Başlıklarda renk geçişleri.
+- **Custom Navigation**: Sidebar'daki standart radyo butonlarını şık bir menüye dönüştürme.
+- **Temiz ve Odaklı**: Gereksiz Streamlit öğelerinin (hamburger menü, footer) gizlenmesi.
+
+## Önerilen Değişiklikler
+
+### [ai_english_tutor]
+
+#### [MODIFY] [app.py](file:///c:/Users/yurth/.gemini/antigravity/scratch/ai_english_tutor/app.py)
+
+1.  **Gelişmiş CSS Enjeksiyonu**:
+    - **Sidebar**: Arka plan rengini ve genişliğini sabitleme. Radyo butonlarını "Navigation Card" olarak şekillendirme.
+    - **Header/Hero**: Sayfanın en üstüne logolu ve gradient başlıklı özel bir `<div>` ekleme.
+    - **Chat Bubbles**: Sohbet balonlarını daha modern, WhatsApp/iMessage tarzı yumuşak köşeli ve gölgeli hale getirme.
+    - **File Uploader**: Standart yükleyiciyi CSS ile özelleştirip "Dropzone" tarzı bir görünüme kavuşturma.
+    - **Gizleme**: `st.deployButton`, `MainMenu` ve `footer` elementlerini `display: none` ile kaldırma.
+
+2.  **Layout Düzenlemeleri**:
+    - Sayfa genişliğini ve padding'leri optimize etme.
+    - "Vision Intelligence" ve diğer sayfalar için özel HTML başlıklar kullanma.
+
+## Hedeflenen Görünüm
+Kullanıcı uygulamayı açtığında bir Python betiği değil, profesyonelce tasarlanmış bir dil öğrenme platformu görmeli.
+
+## Doğrulama
+- Görsel doğrulama: Tasarımın bütünlüğünü ve responsive (mobil uyumlu) olmasını kontrol etme.

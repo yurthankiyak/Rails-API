@@ -1,0 +1,19 @@
+# Backend Ödevi Görevleri (Ruby on Rails 8+ API)
+
+- [/] Proje Kurulumu <!-- id: 0 -->
+    - [/] `rails new` ile API projesi oluştur
+    - [ ] Veritabanı yapılandırması (SQLite/PostgreSQL)
+- [ ] Veri Modeli Tasarımı (5 Model) <!-- id: 1 -->
+    - [ ] `yuml.me` formatında UML oluştur
+    - [ ] Modeller: User, Course, Subject, Video, Analysis (Tahtadaki notlara göre)
+    - [ ] İlişkileri tanımla (1:N, N:N)
+- [ ] API Geliştirme <!-- id: 2 -->
+    - [ ] Scaffold/Resource oluşturma
+    - [ ] Rotaları ayarla (`/v1/users/:id/courses` vb.)
+    - [ ] Controller mantığını yaz
+- [ ] Test ve Dokümantasyon <!-- id: 3 -->
+    - [ ] Postman Collection (JSON) oluştur
+    - [ ] (Bonus) Swagger/OpenAPI entegrasyonu
+- [ ] Paylaşım Hazırlığı <!-- id: 4 -->
+    - [ ] GitHub README (Proje detayları)
+    - [ ] LinkedIn/YouTube için açıklama metinleri

@@ -1,0 +1,6 @@
+# Görevler
+
+- [ ] Çalıştırma talimatlarını hazırla <!-- id: 0 -->
+    - [ ] `requirements.txt` kontrol et
+    - [ ] Çalıştırma betiği (run_app.bat) oluştur
+    - [ ] Kullanıcıya talimatları ver

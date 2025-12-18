@@ -1,0 +1,31 @@
+# Bağlam Farkındalığı Uygulama Planı
+
+Kullanıcının yüklediği dosyaların "Smart Chat" ekranında otomatik olarak fark edilmesini ve sohbetin bu bağlamda başlamasını sağlayacağız.
+
+## Kullanıcı İncelemesi Gerekli
+- Otomatik eklenen mesaj sadece "Assistant" rolüyle yerel olarak eklenecek, modele gönderilmeyecek.
+
+## Önerilen Değişiklikler
+
+### [ai_english_tutor]
+
+#### [MODIFY] [app.py](file:///c:/Users/yurth/.gemini/antigravity/scratch/ai_english_tutor/app.py)
+
+1.  **Session State Güncellemesi**:
+    - `st.session_state.context_filenames` listesi eklenecek.
+    - `st.session_state.context_acknowledged` boolean bayrağı eklenecek (tekrarı önlemek için).
+2.  **NotebookLM Bölümü**:
+    - Dosya eklendiğinde ismi listeye kaydedilecek.
+3.  **Smart Chat Bölümü**:
+    - Sayfa yüklendiğinde `context_docs` doluysa ve `acknowledged` False ise:
+        - Sohbet geçmişine otomatik bir "Assistant" mesajı eklenecek: "Şu dosyaları inceledim: [Dosya İsimleri]. Bunlarla ilgili sorularınızı yanıtlamaya hazırım."
+        - `acknowledged` True yapılacak.
+
+## Doğrulama Planı
+
+### Manuel Test
+1.  Uygulamayı çalıştır ([run_app.bat](file:///c:/Users/yurth/.gemini/antigravity/scratch/ai_english_tutor/run_app.bat)).
+2.  "NotebookLM" sekmesine git.
+3.  Bir [.txt](file:///c:/Users/yurth/.gemini/antigravity/scratch/ai_english_tutor/requirements.txt) dosyası yükle ve "Add to Context" butonuna bas.
+4.  "Smart Chat" sekmesine geç.
+5.  **Beklenen Sonuç**: Sohbet geçmişinde en altta asistanın "Yüklediğiniz şu dosyaları inceledim..." mesajının otomatik belirmesi.
