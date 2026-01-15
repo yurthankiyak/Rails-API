@@ -1,11 +1,11 @@
-﻿source "https://rubygems.org"
+source "https://rubygems.org"
 gem "rails", "~> 8.1.1"
 gem "sqlite3", ">= 2.1"
 gem "puma", ">= 5.0"
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "psych", "5.2.2"
 gem "irb", "1.14.3"
-gem "rdoc", "6.14.0"
+gem "rdoc", "7.1.0"
 gem "solid_cache"
 gem "solid_queue"
 gem "solid_cable"
